@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" href="sub1.html">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item" href="sub2.html">
+	        <span class="mui-icon mui-icon-list"></span>
+	        <span class="mui-tab-label">分类</span>
+	    </a>
+	    <a class="mui-tab-item" href="sub3.html">
+	        <span class="mui-icon mui-icon-chat"></span>
+	        <span class="mui-tab-label">聊天</span>
+	    </a>
+	    <a class="mui-tab-item" href="sub4.html">
+	        <span class="mui-icon mui-icon-gear"></span>
+	        <span class="mui-tab-label">设置</span>
+	    </a>
+	</nav>
+	
+</body>
+
+<script type="text/javascript">
+	let pages=['sub1.html','sub2.html','sub3.html','sub4.html']
+	let pageStyle={
+		top:'0px',
+		bottom:'50px'
+	}
+	
+	mui.plusReady(function(){
+		let self=plus.webview.currentWebview()
+		for (let i=0;i<pages.length;i++) {
+			let sub=plus.webview.create(pages[i],pages[i],pageStyle)
+			sub.hide()
+			self.append(sub)
+		}
+		plus.webview.show(pages[0])
+	})
+	
+	mui(".mui-bar-tab").on("tap","a",function(e){
+		let target=this.getAttribute('href')
+		plus.webview.show(target,"fade-in",100)
+	})
+</script>
+</html>

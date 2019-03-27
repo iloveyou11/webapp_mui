@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>app</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<style type="text/css">
+
+			.mui-slider-item img {
+				width: 100%;
+			height: 250px;
+				object-fit: cover;
+			}
+			
+			.text p{
+				font-size: 15px;
+				margin: 20px 10px;
+				text-indent: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">文章详情</h1>
+		</header>
+
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/s10.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/s1.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/s4.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/s5.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/s9.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/s10.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/s1.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<article class="text">
+			<p>
+				后来，我们追求的爱情不再是心动的感觉，不再是初心执念的模样。而是慢慢被现实沉淀成两个字，合适，更确切地说，是舒服，两个人在一起舒服，就已经满足了。
+			</p>
+			<p>
+				始终单身，不是喜欢单身的感觉，其实，也想要恋爱，来一场不分手的恋爱，来一场自己难以忘怀的青春故事。但是，脱不了单，不是因为没有人喜欢，而是喜欢的人不喜欢自己，喜欢自己的人自己不喜欢。不是不愿将就，我认为爱情的世界里没有将就，而是不合适，没感觉，就这么简单。不是自己痴心妄想，而那是自己心动的感觉，是自己梦寐以求的爱情的模样。
+			</p>
+			<p>
+				喜欢，不一定合适，合适的也不一定会喜欢。身边好多的朋友说，“和他在一起，我也不是喜欢他，而是和他在一起的感觉很舒服，很开心”;“当初和他在一起，没有想那么多，可能是他对我太好了，就在一起了，慢慢地我们之间就相互离不开了”;“其实，说实话，我并不是很喜欢他，比起他，我更喜欢我前男友，但是和他在一起真的自在”……
+			</p>
+			<p>
+				单身，可能是眷顾某一段故事，还走不出来;也许是暗恋着某一位小男孩，没有勇气道破，在等待时机成熟;或许是等待白马王子的骑着宝马来娶我，或是意中人是个盖世英雄，相信有一天，他会驾着七彩祥云来娶我……
+			</p>
+			<p>
+				爱情好复杂，爱不简简单单是两个人在一起，还有更多的东西，爱与不爱，抛弃与喜新厌旧，伤害与痛苦，权势……有时候我喜欢单身的逍遥自在，简单。有时候我也想要爱情的温暖，一个人注定更多时候是孤独的，难过伤心时一个人，失败挫折一个人面对一切，快乐也是一个人的微笑，没有人在乎，没有人关心。好复杂，复杂得伤了自己也浑然不知。
+			</p>
+			<p>
+			拒绝了好多人，也拒绝了自己，伤害了好多人，也伤害自己，这条路，还需要我慢慢地修炼，尚且稚嫩。更多的缘分，不是我想要的感觉，所以，我选择一个人路漫漫其修远兮。在恋爱这条路上，我想我需要更多的时间慢慢领悟。
+			</p>
+		</article>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+
+		</script>
+	</body>
+
+</html>

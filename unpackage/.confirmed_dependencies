@@ -1,0 +1,64 @@
+{
+  "main.html": {
+    "refer": [
+      "setting.html"
+    ]
+  },
+  "login.html": {
+    "refer": [
+      "main.html",
+      "index.html",
+      "reg.html",
+      "forget_password.html"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "images/img3 - o,.jpg",
+      "sub1.html"
+    ],
+    "refer": [
+      "sub4.html",
+      "sub3.html",
+      "sub2.html",
+      "sub1.html"
+    ]
+  },
+  "sub3.html": {
+    "refer": [
+      "sub3_chat.html"
+    ]
+  },
+  "sub4.html": {
+    "resources": [
+      "/images/m1.jpg"
+    ],
+    "refer": [
+      "guide.html"
+    ]
+  },
+  "sub2.html": {
+    "resources": [
+      "subtap/subpage1.html"
+    ],
+    "refer": [
+      "subtap/subpage1.html",
+      "subtap/subpage3.html",
+      "subtap/subpage2.html",
+      "subtap/subpage5.html",
+      "subtap/subpage4.html",
+      "subpage1.html",
+      "subpage2.html"
+    ]
+  },
+  "subtap/subpage1.html": {
+    "refer": [
+      "subtap/readmore.html"
+    ]
+  },
+  "subtap/subpage2.html": {
+    "refer": [
+      "subtap/readmore.html"
+    ]
+  }
+}
